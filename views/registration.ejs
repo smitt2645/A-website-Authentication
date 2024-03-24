@@ -1,0 +1,33 @@
+<%- include('./partials/header.ejs') %>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center">Register</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="/registration" method="post">
+                            <div class="mb-3">
+                                <label for="unames" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="users" name="unames">
+                            </div>
+                            <div class="mb-3">
+                                <label for="uemail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="emails" name="uemail">
+                            </div>
+                            <div class="mb-3">
+                                <label for="upwd" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="passwords" name="upwd">
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('./partials/footer.ejs') %>
